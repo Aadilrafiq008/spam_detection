@@ -20,7 +20,7 @@ def transform_text(text):
     y.clear()
 
     for i in text:
-        and i not in string.punctuation:
+        if i not in string.punctuation:
             y.append(i)
 
     text = y[:]
